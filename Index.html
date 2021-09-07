@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<!-- add icon link -->
+        <link rel = "icon" href = "assests\Icons\Registration.png" type = "image/png">
+
+<!---		**********Links for Enternal files**********		-->
+
+	<link rel="stylesheet" type="text/css" href="assests\CSS\RegistrationForm.css">
+	<script type="text/javascript" src="assests\Javascript\RegistrationForm.js"></script>
+	                             
+</head>
+<body>
+	<div class="regform"><h1><img height="23px" width="30px" src="assests\Icons\Registration.png">Registration Form</h1></div>
+	<div class="main">
+		<form method="post" autocomplete="on" action="src\ProfileCards.html">
+			<div id="name">
+			<h2 class="name">Name<span style="color: red">*</span></h2>
+			<input class="firstname" type="text" name="first_name" placeholder="Tony" required><br>
+			<label class="firstlabel">first name</label>
+			<input class="lastname" type="text" name="last_name" placeholder="Stark">
+			<label class="lastlabel">last name</label>	
+			</div>
+
+			<h2 class="name">College</h2>
+			<input class="company" type="text" name="company" placeholder="Chitkara University">
+
+			<h2 class="name">Email<span style="color: red">*</span></h2>
+			<input id="email" onblur="validate_email()" class="email" type="text" name="email" placeholder="name@xyz.com" required>
+
+			<h2 class="name">Phone<span style="color: red">*</span></h2>
+			<input class="code" type="text" name="area_code" value="+91">
+			<label class="area-code">Area Code</label>
+			<input class="number" id="phone" onblur="validate_phone()" type="text" name="phone" placeholder="xxx-xxx-xxxx" required>
+			<label class="phone-number" id="pn" >Phone Number</label>
+
+			<h2 class="name">Favourite</h2>
+			<select class="option" name="subject">
+				<option disabled="disabled" selected="selected">---Choose Language---</option>
+				<option>HTML</option>
+				<option>CSS</option>
+				<option>Javascript</option>
+
+			</select>
+
+			<h2 id="student">Are you a beginner?</h2>
+
+			<label class="radio">
+					<input type="radio" name="beginner" checked>Yes
+					<input type="radio" name="beginner">No
+			</label>
+			
+
+			<input class="button" type="submit" value="Register" ></input>
+
+		</form>
+	</div>
+</body>
+</html>
